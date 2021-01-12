@@ -1,8 +1,12 @@
-import './App.css';
+import './App.scss';
+import { Fragment } from 'react';
+import { Homepage } from './pages/Homepage/Homepage';
 
 function App() {
   return (
-    <div>Hello React</div>
+    <Fragment>
+      <Homepage />
+    </Fragment>
   );
 }
 
