@@ -1,0 +1,11 @@
+.sign-in {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .sign-in {
+        width: 100%;
+    }
+}
