@@ -2,7 +2,18 @@
     width: 30vw;
     display: flex;
     flex-direction: column;
+
+    .title {
+        margin: 10px 0
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: flex-start;
+    }
 }
+
+
 
 @media screen and (max-width: 768px) {
     .sign-in {
