@@ -1,1 +1,14 @@
-.sign-in-out {}
+.sign-in-out {
+    width: 75vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .sign-in-out {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+}
