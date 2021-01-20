@@ -1,23 +1,14 @@
-import React from 'react'
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import PreviewCollection from '../../components/PreviewCollection/PreviewCollection';
-import { selectCollections } from '../../redux/shop/shop.selectors';
+import { Route } from 'react-router-dom';
+import CollectionsOverview from '../../components/CollectionsOverview/CollectionsOverview';
+import Collection from '../Collection/Collection';
+import './shop.scss';
 
-const ShopPage = ({collections}) => {
+const ShopPage = ({match}) => {
     return (
         <div className='shop-page'>
-            {
-                collections.map(({id, ...otherCollectionProps}) => (
-                    <PreviewCollection key={id} {...otherCollectionProps} />
-                ))
-            }
+            <Route exact path={`${match.path}`} component={CollectionsOverview} />
+            <Route exact path={`${match.path}/:collectionId`} component={Collection} />
         </div>
     )
 }
-
-const mapStateToProps = createStructuredSelector({
-    collections: selectCollections
-})
-
-export default connect(mapStateToProps)(ShopPage);
+export default ShopPage;
