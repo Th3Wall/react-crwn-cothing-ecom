@@ -24,12 +24,12 @@
 
     &:hover {
         .image {
-        opacity: 0.8;
+            opacity: 0.8;
         }
 
         .button {
-        opacity: 0.85;
-        display: flex;
+            opacity: 0.85;
+            display: flex;
         }
     }
 
@@ -41,12 +41,8 @@
         font-size: 18px;
 
         .name {
-        width: 90%;
-        margin-bottom: 15px;
-        }
-
-        .price {
-        width: 10%;
+            width: 90%;
+            margin-bottom: 15px;
         }
     }
 }
