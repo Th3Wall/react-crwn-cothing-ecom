@@ -1,13 +1,10 @@
-import './button.scss';
+import { BaseButton } from './button.styles';
 
-const Button = ({ children, isGoogleSignIn, inverted, ...otherProps }) => {
+const Button = ({ children, ...otherProps }) => {
     return (
-        <button
-            className={`${inverted ? 'inverted': ''} ${isGoogleSignIn ? 'google-sign-in' : ''} button`}
-            {...otherProps}
-        >
+        <BaseButton {...otherProps}>
             {children}
-        </button>
+        </BaseButton>
     )
 }
 
