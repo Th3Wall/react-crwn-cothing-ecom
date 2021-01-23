@@ -1,27 +1,35 @@
 import { connect } from 'react-redux';
 import { addItemToCart, clearItemFromCart, removeItemFromCart } from '../../redux/cart/cart.actions';
-import './checkoutItem.scss';
+import { CartProduct, CartProductName, CartProductPrice, CartProductQuantity, CartProductQuantityWrp, ImageContainer, QuantityArrow, RemoveItem } from './checkoutItem.styles';
 
 const CheckoutItem = ({cartItem, clearItem, addItem, removeItem}) => {
     const {imageUrl, name, price, quantity} = cartItem;
     return (
-        <div className="checkout-item">
-            <div className="image-container">
+        <CartProduct>
+            <ImageContainer>
                 <img src={imageUrl} alt='item' />
-            </div>
-            <span className="name">{name}</span>
-            <span className="quantity">
-                <div className="arrow" onClick={() => removeItem(cartItem)}>
+            </ImageContainer>
+            <CartProductName>{name}</CartProductName>
+            <CartProductQuantityWrp>
+                <QuantityArrow
+                    onClick={() => removeItem(cartItem)}
+                >
                     &#10094;
-                </div>
-                <span className="value">{quantity}</span>
-                <div className="arrow" onClick={() => addItem(cartItem)}>
+                </QuantityArrow>
+                <CartProductQuantity>{quantity}</CartProductQuantity>
+                <QuantityArrow
+                    onClick={() => addItem(cartItem)}
+                >
                     &#10095;
-                </div>
-            </span>
-            <span className="price">${price}</span>
-            <div className="remove-button" onClick={() => clearItem(cartItem)}>&#10005;</div>
-        </div>
+                </QuantityArrow>
+            </CartProductQuantityWrp>
+            <CartProductPrice>${price}</CartProductPrice>
+            <RemoveItem
+                onClick={() => clearItem(cartItem)}
+            >
+                &#10005;
+            </RemoveItem>
+        </CartProduct>
     )
 }
 

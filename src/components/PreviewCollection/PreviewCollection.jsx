@@ -1,11 +1,11 @@
-import './previewCollection.scss';
 import CollectionItem from '../CollectionItem/CollectionItem';
+import { CollectionPreviewTitle, CollectionPreviewWrp, Preview } from './previewCollection.styles';
 
 const PreviewCollection = ({ title, items }) => {
     return (
-        <div className='collection-preview'>
-            <h2 className='title'>{title.toUpperCase()}</h2>
-            <div className='preview'>
+        <CollectionPreviewWrp>
+            <CollectionPreviewTitle>{title.toUpperCase()}</CollectionPreviewTitle>
+            <Preview>
                 {
                     items
                         .filter((item, idx) => idx < 4)
@@ -13,8 +13,8 @@ const PreviewCollection = ({ title, items }) => {
                             <CollectionItem key={item.id} item={item} />
                         ))
                 }
-            </div>
-        </div>
+            </Preview>
+        </CollectionPreviewWrp>
     )
 }
 
