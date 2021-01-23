@@ -1,4 +1,3 @@
-import './stripeButton.scss';
 import StripeCheckout from 'react-stripe-checkout';
 
 const StripeButton = ({price}) => {
