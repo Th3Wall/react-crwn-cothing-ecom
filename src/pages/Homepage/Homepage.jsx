@@ -3,7 +3,7 @@ import { HomepageContainer } from './homepage.styles';
 
 export const Homepage = () => {
     return (
-        <HomepageContainer className='homepage'>
+        <HomepageContainer>
             <Directory />
         </HomepageContainer>
     )

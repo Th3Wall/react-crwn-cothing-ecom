@@ -1,7 +1,13 @@
 import { connect } from 'react-redux';
 import { addItemToCart } from '../../redux/cart/cart.actions';
-import './collectionItem.scss';
-import { CollectionItemContainer, AddToCartButton, BackgroundImage, NameContainer, PriceContainer, CollectionFooterContainer } from './collectionItem.styles';
+import {
+    CollectionItemContainer,
+    AddToCartButton,
+    BackgroundImage,
+    NameContainer,
+    PriceContainer,
+    CollectionFooterContainer
+} from './collectionItem.styles';
 
 const CollectionItem = ({ item, addItem }) => {
     const { id, name, price, imageUrl } = item;

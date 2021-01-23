@@ -9,6 +9,8 @@ export const CollectionPreviewWrp = styled.div`
 export const CollectionPreviewTitle = styled.div`
     font-size: 28px;
     margin-bottom: 25px;
+    font-weight: 600;
+    margin-top: 1.5em;
 `
 
 export const Preview = styled.div`

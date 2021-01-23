@@ -2,7 +2,12 @@ import React from 'react'
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
 import Button from '../Button/Button';
 import FormInput from '../FormInput/FormInput';
-import { SignInButtonsWrp, SignInSubtitle, SignInTitle, SignInWrapper } from './signIn.styles';
+import {
+    SignInButtonsWrp,
+    SignInSubtitle,
+    SignInTitle,
+    SignInWrapper
+} from './signIn.styles';
 
 class SignIn extends React.Component {
     constructor(props) {

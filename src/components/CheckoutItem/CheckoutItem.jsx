@@ -1,6 +1,15 @@
 import { connect } from 'react-redux';
 import { addItemToCart, clearItemFromCart, removeItemFromCart } from '../../redux/cart/cart.actions';
-import { CartProduct, CartProductName, CartProductPrice, CartProductQuantity, CartProductQuantityWrp, ImageContainer, QuantityArrow, RemoveItem } from './checkoutItem.styles';
+import {
+    CartProduct,
+    CartProductName,
+    CartProductPrice,
+    CartProductQuantity,
+    CartProductQuantityWrp,
+    ImageContainer,
+    QuantityArrow,
+    RemoveItem
+} from './checkoutItem.styles';
 
 const CheckoutItem = ({cartItem, clearItem, addItem, removeItem}) => {
     const {imageUrl, name, price, quantity} = cartItem;

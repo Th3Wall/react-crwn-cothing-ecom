@@ -1,4 +1,10 @@
-import { CartItemDetails, CartItemImage, CartItemName, CartItemPrice, CartItemWrp } from './cartItem.styles';
+import {
+    CartItemDetails,
+    CartItemImage,
+    CartItemName,
+    CartItemPrice,
+    CartItemWrp
+} from './cartItem.styles';
 
 const CartItem = ({ item: { imageUrl, name, price, quantity }}) => {
     return (

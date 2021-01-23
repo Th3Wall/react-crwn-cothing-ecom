@@ -6,7 +6,12 @@ import CartDropdown from '../CartDropdown/CartDropdown';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { selectCartDropdownHidden } from '../../redux/cart/cart.selectors';
-import { HeaderContainer, LogoContainer, OptionLink, OptionsContainer } from './header.styles';
+import {
+    HeaderContainer,
+    LogoContainer,
+    OptionLink,
+    OptionsContainer
+} from './header.styles';
 
 function Header({currentUser, hidden}) {
     return (

@@ -1,13 +1,13 @@
 import SignIn from '../../components/SignIn/SignIn';
 import SignUp from '../../components/SignUp/SignUp';
-import './signInOut.scss';
+import { SignInOutWrapper } from './signInOut.styles';
 
 const SignInOut = () => {
     return (
-        <div className="sign-in-out">
+        <SignInOutWrapper>
             <SignIn />
             <SignUp />
-        </div>
+        </SignInOutWrapper>
     )
 }
 

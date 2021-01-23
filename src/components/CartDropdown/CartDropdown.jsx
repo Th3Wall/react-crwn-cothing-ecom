@@ -4,7 +4,12 @@ import { selectCartItems } from '../../redux/cart/cart.selectors';
 import { createStructuredSelector } from 'reselect';
 import { withRouter } from 'react-router-dom';
 import { toggleCartDropdown } from '../../redux/cart/cart.actions';
-import { CartItemsWrp, CartWrp, CheckoutButton, EmptyMessage } from './cartDropdown.styles';
+import {
+    CartItemsWrp,
+    CartWrp,
+    CheckoutButton,
+    EmptyMessage
+} from './cartDropdown.styles';
 
 const CartDropdown = ({ cartItems, history, dispatch }) => {
     return (
