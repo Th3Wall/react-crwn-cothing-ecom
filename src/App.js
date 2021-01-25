@@ -5,7 +5,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import ShopPage from "./pages/Shop/Shop";
 import Header from "./components/Header/Header";
 import SignInOut from "./pages/SignInOut/SignInOut";
-import { addCollectionAndDocuments, auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { createStructuredSelector } from "reselect";
@@ -17,7 +17,7 @@ class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
-    const { setCurrentUser, collectionsArray } = this.props;
+    const { setCurrentUser } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
@@ -30,10 +30,6 @@ class App extends React.Component {
         });
       }
       setCurrentUser(userAuth);
-      addCollectionAndDocuments('collections',
-        collectionsArray.map(
-          ({title, items}) => ({title, items})
-        ));
     });
   }
 
