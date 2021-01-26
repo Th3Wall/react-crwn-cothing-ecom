@@ -28,5 +28,4 @@ export const selectIsCollectionsLoaded = createSelector(
     shop => !!shop.collections
     // I have added the double !! before the shop.collections in order to transform it in a boolean value;
     // I need it in order to know if the collections are loaded and so if the loader has to be shown or not;
-    // Inside the Shop Component I will invert the condition with a ! before the variable that comes out from the selector;
 )
