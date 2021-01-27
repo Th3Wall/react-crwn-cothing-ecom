@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# CRWN Clothing - An e-commerce built with React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
