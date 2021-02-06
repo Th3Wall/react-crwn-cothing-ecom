@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CollectionWrp = styled.div`
     display: flex;
+    align-items: center;
     flex-direction: column;
 `
 
@@ -14,9 +15,10 @@ export const CollectionTitle = styled.h2`
 export const CollectionList = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 40px;
 
-    & > div {
-        margin-bottom: 40px;
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px 30px;
     }
 `

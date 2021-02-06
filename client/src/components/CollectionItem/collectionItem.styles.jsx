@@ -8,6 +8,13 @@ export const AddToCartButton = styled(Button)`
     top: 255px;
     display: none;
     border-radius: 8px;
+
+    @media screen and (max-width: 1024px) {
+        display: block;
+        opacity: 0.9;
+        min-width: unset;
+        padding: 0 10px;
+    }
 `
 
 export const CollectionItemContainer = styled.div`
@@ -25,6 +32,19 @@ export const CollectionItemContainer = styled.div`
 
         button {
             display: flex;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 40vw;
+
+        &:hover {
+            .image {
+                opacity: unset;
+            }
+            button {
+                opacity: unset;
+            }
         }
     }
 `

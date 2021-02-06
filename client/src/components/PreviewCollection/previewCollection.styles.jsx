@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const CollectionPreviewWrp = styled.div`
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 1024px) {
+        align-items: center;
+    }
 `
 
 export const CollectionPreviewTitle = styled.h1`
@@ -23,4 +27,10 @@ export const CollectionPreviewTitle = styled.h1`
 export const Preview = styled.div`
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px 30px;
+    }
 `

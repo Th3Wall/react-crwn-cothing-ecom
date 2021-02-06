@@ -1,4 +1,5 @@
 import "./App.scss";
+import { GlobalStyles } from './global.styles';
 import React, { Fragment, useEffect } from "react";
 import { Homepage } from "./pages/Homepage/Homepage";
 import { Switch, Route, Redirect } from "react-router-dom";
@@ -19,6 +20,7 @@ const App = ({ checkUserSession, currentUser }) => {
 
   return (
     <Fragment>
+      <GlobalStyles />
       <Header />
       <Switch>
         <Route exact path="/" component={Homepage} />
