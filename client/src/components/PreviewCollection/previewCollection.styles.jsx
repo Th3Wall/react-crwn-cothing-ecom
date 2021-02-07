@@ -11,7 +11,7 @@ export const CollectionPreviewWrp = styled.div`
 `
 
 export const CollectionPreviewTitle = styled.h1`
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 25px;
     font-weight: 600;
     margin-top: 1.5em;

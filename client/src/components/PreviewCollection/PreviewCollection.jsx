@@ -8,7 +8,7 @@ const PreviewCollection = ({ title, items, history, match, routeName }) => {
             <CollectionPreviewTitle
                 onClick={() => history.push(`${match.path}/${routeName}`)}
             >
-                {title.toUpperCase()}
+                {title}
             </CollectionPreviewTitle>
             <Preview>
                 {

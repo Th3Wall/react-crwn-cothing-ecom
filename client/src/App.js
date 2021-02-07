@@ -11,6 +11,7 @@ import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/user/user.selectors";
 import Checkout from "./pages/Checkout/Checkout";
 import { checkUserSession } from "./redux/user/user.actions";
+import ContactsPage from "./pages/Contacts/Contacts";
 
 const App = ({ checkUserSession, currentUser }) => {
   
@@ -25,6 +26,7 @@ const App = ({ checkUserSession, currentUser }) => {
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route path="/shop" component={ShopPage} />
+        <Route path="/contacts" component={ContactsPage} />
         <Route exact path="/checkout" component={Checkout} />
         <Route path="/login" render={() => currentUser ? <Redirect to="/"/> : <SignInOut />} />
       </Switch>

@@ -13,6 +13,11 @@ export const CheckoutWrp = styled.div`
         margin-top: 3em;
         margin-bottom: 5em;
     }
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 0 10px;
+    }
 `
 
 export const CheckoutHeader = styled.div`
@@ -29,6 +34,14 @@ export const CheckoutHeaderBlock = styled.span`
 
     &:last-child {
         width: 8%;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 22%;
+
+        &:last-child {
+            width: 12%;
+        }
     }
 `
 

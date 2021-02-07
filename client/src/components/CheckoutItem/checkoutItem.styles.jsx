@@ -12,6 +12,10 @@ export const CartProduct = styled.div`
     padding: 15px 0;
     font-size: 20px;
     align-items: center;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 18px;
+    }
 `
 
 export const ImageContainer = styled.div`
@@ -22,6 +26,10 @@ export const ImageContainer = styled.div`
         width: 100%;
         height: 100%;
         border-radius: 12px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 22%;
     }
 `
 
