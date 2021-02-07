@@ -34,3 +34,10 @@ export const EmptyMessage = styled.span`
     font-size: 18px;
     margin: 50px auto;
 `
+
+export const CloseCart = styled.div`
+    position: fixed;
+    top: 25px;
+    right: 50px;
+    cursor: pointer;
+`

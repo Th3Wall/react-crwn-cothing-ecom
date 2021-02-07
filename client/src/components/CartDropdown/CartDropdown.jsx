@@ -8,12 +8,18 @@ import {
     CartItemsWrp,
     CartWrp,
     CheckoutButton,
-    EmptyMessage
+    EmptyMessage,
+    CloseCart
 } from './cartDropdown.styles';
 
 const CartDropdown = ({ cartItems, history, dispatch }) => {
     return (
         <CartWrp>
+            <CloseCart onClick={() => 
+                dispatch(toggleCartDropdown())
+            }>
+                &#10005;
+            </CloseCart>
             <CartItemsWrp>
                 {
                     cartItems.length ? (
