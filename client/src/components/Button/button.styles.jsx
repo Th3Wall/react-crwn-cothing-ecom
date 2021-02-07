@@ -49,6 +49,7 @@ export const BaseButton = styled.button`
     padding: 0 35px 0 35px;
     font-size: 15px;
     border: 1px solid transparent;
+    border-radius: 8px;
     text-transform: uppercase;
     font-family: 'Open Sans Condensed';
     font-weight: bolder;

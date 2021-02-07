@@ -2,17 +2,20 @@ import styled from "styled-components";
 import Button from "../Button/Button";
 
 export const CartWrp = styled.div`
-    position: absolute;
-    width: 350px;
-    height: 340px;
+    position: fixed;
+    width: 400px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border: 1px solid black;
+    padding-top: 70px;
     background-color: white;
-    top: 90px;
-    right: 40px;
+    box-shadow: -4px 0px 23px -8px rgba(173,173,173,0.89);
+    top: 0;
+    right: 0;
     z-index: 5;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
 `
 
 export const CartItemsWrp = styled.div`
@@ -20,6 +23,7 @@ export const CartItemsWrp = styled.div`
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    padding-right: 20px;
 `
 
 export const CheckoutButton = styled(Button)`

@@ -7,13 +7,18 @@ const cartItemDetailStyles = css`
 export const CartItemWrp = styled.div`
     width: 100%;
     display: flex;
-    height: 80px;
+    height: auto;
     margin-bottom: 15px;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+    padding: 10px;
 `
 
 export const CartItemImage = styled.img`
-    width: 30%;
+    width: 100%;
     border-radius: 12px;
+    max-width: 20%;
+    height: 85px;
 `
 
 export const CartItemDetails = styled.div`

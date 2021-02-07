@@ -7,7 +7,6 @@ export const AddToCartButton = styled(Button)`
     position: absolute;
     top: 255px;
     display: none;
-    border-radius: 8px;
 
     @media screen and (max-width: 1024px) {
         display: block;
