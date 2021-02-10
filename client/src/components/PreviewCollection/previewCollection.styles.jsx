@@ -11,7 +11,7 @@ export const CollectionPreviewWrp = styled(motion.div)`
     }
 `
 
-export const CollectionPreviewTitle = styled.h1`
+export const CollectionPreviewTitle = styled(motion.h1)`
     font-size: 36px;
     margin-bottom: 25px;
     font-weight: 600;

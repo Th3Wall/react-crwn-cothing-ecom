@@ -8,7 +8,7 @@ const collectionPreviewVariants = {
         opacity: 1,
         transition: {
             delay: 0.2,
-            staggerChildren: 0.3
+            staggerChildren: 0.4
         }
     }
 }
@@ -22,6 +22,7 @@ const PreviewCollection = ({ title, items, history, match, routeName, variants }
     return (
         <CollectionPreviewWrp variants={variants}>
             <CollectionPreviewTitle
+                variants={variants}
                 onClick={() => history.push(`${match.path}/${routeName}`)}
             >
                 {title}

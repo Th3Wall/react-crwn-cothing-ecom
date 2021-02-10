@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
-export const CollectionWrp = styled.div`
+export const CollectionWrp = styled(motion.div)`
     display: flex;
     align-items: center;
     flex-direction: column;
 `
 
-export const CollectionTitle = styled.h2`
+export const CollectionTitle = styled(motion.h2)`
     font-size: 38px;
     margin: 0 auto;
     margin-bottom: 50px;

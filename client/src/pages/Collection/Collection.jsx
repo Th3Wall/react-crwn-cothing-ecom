@@ -7,15 +7,35 @@ import {
     CollectionWrp
 } from './collection.styles';
 
+const collectionContainerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            delay: 0.2,
+            staggerChildren: 0.2
+        }
+    }
+}
+
+const itemVariants = {
+    hidden: { opacity: 0,  y: '25px' },
+    show: { opacity: 1, y: '0px' }
+}
+
 const Collection = ({collection}) => {
     const { items, title } = collection;
     return (
-        <CollectionWrp>
-            <CollectionTitle>{title}</CollectionTitle>
+        <CollectionWrp
+            variants={collectionContainerVariants}
+            initial="hidden"
+            animate="show"
+        >
+            <CollectionTitle variants={itemVariants}>{title}</CollectionTitle>
             <CollectionList>
                 {
                     items.map(item => 
-                        <CollectionItem key={item.id} item={item} />
+                        <CollectionItem key={item.id} item={item} variants={itemVariants} />
                     )
                 }
             </CollectionList>
