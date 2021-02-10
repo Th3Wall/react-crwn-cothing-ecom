@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Button from '../Button/Button';
+import { motion } from 'framer-motion';
 
 export const AddToCartButton = styled(Button)`
     width: 80%;
@@ -16,7 +17,7 @@ export const AddToCartButton = styled(Button)`
     }
 `
 
-export const CollectionItemContainer = styled.div`
+export const CollectionItemContainer = styled(motion.div)`
     width: 22vw;
     display: flex;
     flex-direction: column;

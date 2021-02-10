@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
-export const CollectionPreviewWrp = styled.div`
+export const CollectionPreviewWrp = styled(motion.div)`
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
@@ -24,7 +25,7 @@ export const CollectionPreviewTitle = styled.h1`
     }
 `
 
-export const Preview = styled.div`
+export const Preview = styled(motion.div)`
     display: flex;
     justify-content: space-between;
 

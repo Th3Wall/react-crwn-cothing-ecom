@@ -9,10 +9,10 @@ import {
     CollectionFooterContainer
 } from './collectionItem.styles';
 
-const CollectionItem = ({ item, addItem }) => {
+const CollectionItem = ({ item, addItem, variants }) => {
     const { id, name, price, imageUrl } = item;
     return (
-        <CollectionItemContainer key={id}>
+        <CollectionItemContainer key={id} variants={variants}>
             <BackgroundImage className='image' imageUrl={imageUrl} />
             <CollectionFooterContainer>
                 <NameContainer>{name}</NameContainer>
