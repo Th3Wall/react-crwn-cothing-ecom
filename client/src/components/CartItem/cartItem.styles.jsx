@@ -1,10 +1,11 @@
 import styled, { css } from "styled-components";
+import { motion } from 'framer-motion';
 
 const cartItemDetailStyles = css`
     font-size: 16px;
 `
 
-export const CartItemWrp = styled.div`
+export const CartItemWrp = styled(motion.div)`
     width: 100%;
     display: flex;
     height: auto;

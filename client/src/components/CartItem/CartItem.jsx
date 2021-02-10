@@ -7,9 +7,11 @@ import {
     CartItemWrp
 } from './cartItem.styles';
 
-const CartItem = ({ item: { imageUrl, name, price, quantity }}) => {
+const CartItem = ({ item: { imageUrl, name, price, quantity }, variants}) => {
     return (
-        <CartItemWrp>
+        <CartItemWrp
+            variants={variants}
+        >
             <CartItemImage src={imageUrl} alt="cart-item"/>
             <CartItemDetails>
                 <CartItemName>{name}</CartItemName>

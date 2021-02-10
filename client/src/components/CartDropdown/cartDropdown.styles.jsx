@@ -23,7 +23,7 @@ export const CartWrp = styled(motion.div)`
     }
 `
 
-export const CartItemsWrp = styled.div`
+export const CartItemsWrp = styled(motion.div)`
     height: 100%;
     display: flex;
     flex-direction: column;

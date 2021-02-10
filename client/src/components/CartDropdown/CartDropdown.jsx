@@ -12,6 +12,23 @@ import {
     CloseCart
 } from './cartDropdown.styles';
 
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            delay: 0.2,
+            staggerChildren: 0.1,
+            delayChildren: 0.4
+        }
+    }
+}
+
+const item = {
+    hidden: { opacity: 0,  y: '-20px' },
+    show: { opacity: 1, y: '0px' }
+}
+
 const CartDropdown = ({ cartItems, history, dispatch }) => {
     return (
         <CartWrp
@@ -24,10 +41,14 @@ const CartDropdown = ({ cartItems, history, dispatch }) => {
             }>
                 &#10005;
             </CloseCart>
-            <CartItemsWrp>
+            <CartItemsWrp
+                variants={container}
+                initial="hidden"
+                animate="show"
+            >
                 {
                     cartItems.length ? (
-                        cartItems.map(cartItem => <CartItem key={cartItem.id} item={cartItem} />)
+                        cartItems.map(cartItem => <CartItem key={cartItem.id} item={cartItem} variants={item} />)
                     ) : (
                         <EmptyMessage>You cart is empty</EmptyMessage>
                     )
