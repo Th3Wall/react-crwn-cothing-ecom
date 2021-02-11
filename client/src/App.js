@@ -9,6 +9,7 @@ import { selectCurrentUser } from "./redux/user/user.selectors";
 import { checkUserSession } from "./redux/user/user.actions";
 import Spinner from "./components/Spinner/Spinner";
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
+import { AnimatePresence } from "framer-motion";
 
 const Homepage = lazy(() => import('./pages/Homepage/Homepage'));
 const ShopPage = lazy(() => import('./pages/Shop/Shop'));
@@ -25,7 +26,8 @@ const App = ({ checkUserSession, currentUser }) => {
   return (
     <Fragment>
       <GlobalStyles />
-      <Header />
+      <AnimatePresence exitBeforeEnter>
+        <Header />
         <ErrorBoundary>
           <Suspense fallback={<Spinner/>}>
             <Switch>
@@ -37,6 +39,7 @@ const App = ({ checkUserSession, currentUser }) => {
             </Switch>
           </Suspense>
         </ErrorBoundary>
+      </AnimatePresence>
     </Fragment>
   );
 }
