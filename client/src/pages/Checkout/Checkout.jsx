@@ -13,7 +13,12 @@ import {
 
 const Checkout = ({cartItems, total}) => {
     return (
-        <CheckoutWrp>
+        <CheckoutWrp
+            initial={{ opacity: 0, y: '50px' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '50px' }}
+            transition={{ ease: "easeOut", duration: 1 }}
+        >
             <CheckoutHeader>
                 <CheckoutHeaderBlock><span>Product</span></CheckoutHeaderBlock>
                 <CheckoutHeaderBlock><span>Description</span></CheckoutHeaderBlock>

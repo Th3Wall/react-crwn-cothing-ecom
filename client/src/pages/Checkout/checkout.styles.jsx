@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
-export const CheckoutWrp = styled.div`
+export const CheckoutWrp = styled(motion.div)`
     width: 55%;
     min-height: 90vh;
     display: flex;

@@ -15,7 +15,12 @@ import { signOutStart } from '../../redux/user/user.actions';
 
 function Header({currentUser, hidden, signOutStart}) {
     return (
-        <HeaderContainer>
+        <HeaderContainer
+            initial={{ opacity: 0, y: '-50px' }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: '-50px' }}
+            transition={{ ease: "easeOut", duration: 1 }}
+        >
             <LogoContainer to="/">
                 <Logo />
             </LogoContainer>

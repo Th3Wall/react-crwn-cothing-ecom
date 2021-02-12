@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
-export const SignInOutWrapper = styled.div`
+export const SignInOutWrapper = styled(motion.div)`
     width: 75vw;
     display: flex;
     justify-content: space-around;

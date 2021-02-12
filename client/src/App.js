@@ -1,7 +1,7 @@
 import "./App.scss";
 import { GlobalStyles } from './global.styles';
 import React, { Fragment, useEffect, lazy, Suspense } from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 import Header from './components/Header/Header';
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
@@ -19,6 +19,8 @@ const SignInOut = lazy(() => import('./pages/SignInOut/SignInOut'));
 
 const App = ({ checkUserSession, currentUser }) => {
   
+  const location = useLocation();
+
   useEffect(() => {
     checkUserSession()
   }, [checkUserSession])
@@ -30,7 +32,7 @@ const App = ({ checkUserSession, currentUser }) => {
         <Header />
         <ErrorBoundary>
           <Suspense fallback={<Spinner/>}>
-            <Switch>
+            <Switch location={location} key={location.pathname}>
               <Route exact path="/" component={Homepage} />
               <Route path="/shop" component={ShopPage} />
               <Route path="/contacts" component={ContactsPage} />

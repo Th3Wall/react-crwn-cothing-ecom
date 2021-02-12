@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled(motion.div)`
     height: 70px;
     width: 100%;
     display: flex;
