@@ -1,4 +1,3 @@
-import "./App.scss";
 import { GlobalStyles } from './global.styles';
 import React, { Fragment, useEffect, lazy, Suspense } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
