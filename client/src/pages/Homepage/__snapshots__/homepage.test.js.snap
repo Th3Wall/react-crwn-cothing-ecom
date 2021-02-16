@@ -1,3 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Homepage should display homepage 1`] = `ShallowWrapper {}`;
+exports[`Homepage should display homepage 1`] = `
+<Styled(Component)
+  animate={
+    Object {
+      "opacity": 1,
+      "y": 0,
+    }
+  }
+  exit={
+    Object {
+      "opacity": 0,
+      "y": "50px",
+    }
+  }
+  initial={
+    Object {
+      "opacity": 0,
+      "y": "50px",
+    }
+  }
+  transition={
+    Object {
+      "duration": 1,
+      "ease": "easeOut",
+    }
+  }
+>
+  <Connect(Directory) />
+</Styled(Component)>
+`;
