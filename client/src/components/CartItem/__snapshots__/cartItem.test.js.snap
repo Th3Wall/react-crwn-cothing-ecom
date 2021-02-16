@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem should display CartItem component 1`] = `
+<Styled(Component)>
+  <styled.img
+    alt="cart-item"
+    src="https://i.ibb.co/1RcFPk0/white-nike-high-tops.png"
+  />
+  <styled.div>
+    <styled.span>
+      Sneakers Nike Air Max
+    </styled.span>
+    <styled.span>
+      1
+       x $
+      99
+    </styled.span>
+  </styled.div>
+</Styled(Component)>
+`;

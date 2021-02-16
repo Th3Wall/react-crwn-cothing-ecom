@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StripeButton should display StripeButton component 1`] = `
+<ReactStripeCheckout
+  ComponentClass="span"
+  amount={NaN}
+  billingAddress={true}
+  className="StripeCheckout"
+  description="Your total is $undefined"
+  image="https://svgshare.com/i/CUz.svg"
+  label="Pay Now"
+  locale="auto"
+  name="CRWN Clothing Ltd."
+  panelLabel="Pay Now"
+  reconfigureOnUpdate={false}
+  shoppingAddress={true}
+  stripeKey="pk_test_51IBr8VHqXDEPY8zA15Ee2YhUD4RZlfpEPYKi4A7sHMZInj5iRYswwMS8dn4o04Se2ophvJbUal1fAThQlWO8GQUz00ZN0Bd13Y"
+  token={[Function]}
+  triggerEvent="onClick"
+/>
+`;
