@@ -1,8 +1,26 @@
 # 👑 CRWN Clothing - An e-commerce built with React
 
-### ▶️ Demo
-Here's the [demo link](https://ecom-crwn-clothing.herokuapp.com/).
+## 🎯 About ##
 
+I've [bought this course](https://academy.zerotomastery.io/p/complete-react-developer-redux-hooks-graphql-zero-to-mastery) in order to start from the very beginning by learning the basics of React and then going into advanced topics with the purpose of making good decisions on architecture and tools on any of my future ReactJS projects.<br/><br/>
+This project-based course introduced me to all of the modern toolchain of a React developer in 2021.<br/>
+Along the way, I have built a full stack app (MERN stack): it's a massive e-commerce application built using React, Redux, React Hooks, React Suspense, React Router, GraphQL, Context API, Firebase, Redux-Saga, Stripe and a lot more technologies.<br/><br/>
+
+## ▶️ Demo
+Here's the [demo link](https://ecom-crwn-clothing.herokuapp.com/).
+<br/><br/>
+
+## :sparkles: Features ##
+
+:heavy_check_mark: Use of React hooks and custom hooks<br/>
+:heavy_check_mark: Use of React Context API<br/>
+:heavy_check_mark: Use of React Router<br/>
+:heavy_check_mark: Page transitions and animations (handled with Framer Motion)<br/>
+:heavy_check_mark: Fake cart payment (handled with Stripe API)<br/>
+:heavy_check_mark: Performance checks with React.memo<br/>
+:heavy_check_mark: Snapshot testing with Enzyme<br/>
+:heavy_check_mark: Responsive Web-App
+<br/><br/>
 ## :rocket: Technologies ##
 
 - [React](https://reactjs.org/)
@@ -27,7 +45,7 @@ Here's the [demo link](https://ecom-crwn-clothing.herokuapp.com/).
 - [GraphQL](https://graphql.org/)
 - [Apollo](https://www.apollographql.com/)
 - [Heroku - Responsible for the deploy](https://www.heroku.com/)
-
+<br/><br/>
 ## :white_check_mark: Requirements ##
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
