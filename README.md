@@ -20,9 +20,9 @@ Here's the [demo link](https://ecom-crwn-clothing.herokuapp.com/).
 :heavy_check_mark: Page transitions and animations (handled with Framer Motion)<br/>
 :heavy_check_mark: Sign In & Sign Up features<br/>
 :heavy_check_mark: Google login<br/>
-:heavy_check_mark: User and cart persistance with Redux-Persist<br/>
+:heavy_check_mark: User and cart persistence with Redux-Persist<br/>
 :heavy_check_mark: Fake cart payment (handled with Stripe API)<br/>
-:heavy_check_mark: Performance checks with React.memo<br/>
+:heavy_check_mark: Performance optimizations with React.memo<br/>
 :heavy_check_mark: Snapshot testing with Enzyme<br/>
 :heavy_check_mark: Responsive Web-App
 <br/><br/>
