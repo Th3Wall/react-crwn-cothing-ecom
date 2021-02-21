@@ -1,5 +1,5 @@
 # 👑 CRWN Clothing - An e-commerce built with React
-![GIF of Crown Clothing](https://i.postimg.cc/RVFm0r7z/Crown-Clothing.gif)
+[![Crown-Clothing.gif](https://i.postimg.cc/RVFm0r7z/Crown-Clothing.gif)](https://postimg.cc/vDpkPN2P)
 <br/><br/>
 
 ## 🎯 About ##
