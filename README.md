@@ -1,5 +1,6 @@
 # 👑 CRWN Clothing - An e-commerce built with React
-<br/>
+![](https://cdn.jsdelivr.net/gh/Th3Wall/assets-cdn/CrownClothing.gif)
+<br/><br/>
 
 ## 🎯 About ##
 
