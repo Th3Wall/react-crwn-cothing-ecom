@@ -9,7 +9,10 @@ This project-based course introduced me to all of the modern toolchain of a Reac
 Along the way, I have built a full stack app (MERN stack): it's a massive e-commerce application built using React, Redux, React Hooks, React Suspense, React Router, GraphQL, Context API, Firebase, Redux-Saga, Stripe and a lot more technologies.<br/><br/>
 
 ## ▶️ Demo
-Here's the [demo link](https://ecom-crwn-clothing.herokuapp.com/).
+
+Here you can find the demo link:
+
+- [Heroku](https://ecom-crwn-clothing.herokuapp.com/)
 <br/><br/>
 
 ## :sparkles: Features ##
