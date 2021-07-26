@@ -13,22 +13,21 @@ Along the way, I have built a full stack app (MERN stack): it's a massive e-comm
 Here you can find the demo link:
 
 - [Heroku](https://ecom-crwn-clothing.herokuapp.com/)
-<br/><br/>
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Use of React hooks and custom hooks<br/>
-:heavy_check_mark: Use of React Context API<br/>
-:heavy_check_mark: Use of React Router<br/>
-:heavy_check_mark: Page transitions and animations (handled with Framer Motion)<br/>
-:heavy_check_mark: Sign In & Sign Up features<br/>
-:heavy_check_mark: Google login<br/>
-:heavy_check_mark: User and cart persistence with Redux-Persist<br/>
-:heavy_check_mark: Fake cart payment (handled with Stripe API)<br/>
-:heavy_check_mark: Performance optimizations with React.memo<br/>
-:heavy_check_mark: Snapshot testing with Enzyme<br/>
-:heavy_check_mark: Responsive Web-App
-<br/><br/>
+:heavy_check_mark: &nbsp;Use of React hooks and custom hooks<br/>
+:heavy_check_mark: &nbsp;Use of React Context API<br/>
+:heavy_check_mark: &nbsp;Use of React Router<br/>
+:heavy_check_mark: &nbsp;Page transitions and animations (handled with Framer Motion)<br/>
+:heavy_check_mark: &nbsp;Sign In & Sign Up features<br/>
+:heavy_check_mark: &nbsp;Google login<br/>
+:heavy_check_mark: &nbsp;User and cart persistence with Redux-Persist<br/>
+:heavy_check_mark: &nbsp;Fake cart payment (handled with Stripe API)<br/>
+:heavy_check_mark: &nbsp;Performance optimizations with React.memo<br/>
+:heavy_check_mark: &nbsp;Snapshot testing with Enzyme<br/>
+:heavy_check_mark: &nbsp;Responsive Web-App
+
 ## :rocket: Technologies ##
 
 - [React](https://reactjs.org/)
@@ -53,7 +52,7 @@ Here you can find the demo link:
 - [GraphQL](https://graphql.org/)
 - [Apollo](https://www.apollographql.com/)
 - [Heroku - Responsible for the deploy](https://www.heroku.com/)
-<br/><br/>
+
 ## :white_check_mark: Requirements ##
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
